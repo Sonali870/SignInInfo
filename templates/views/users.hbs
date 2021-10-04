@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+  vertical-align: middle;
+  margin-top: 8px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #A1A6AB;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+ height: 16px;
+width: 14px;
+left: 2px;
+bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: steelblue;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.table th, .table td { 
+     border-top: none !important;
+     border-left: none !important;
+ }
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: whitesmoke ;
+}
+
+.table-call {
+    min-height: .01%;
+    overflow-x: auto;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: lightgray;
+    color: white;
+}
+
+
+.table.table-bordered.vertical,
+.table.table-bordered.vertical td,
+.table.table-bordered.vertical th{
+  border-top: 0px solid white !important;
+  border-bottom: 0px solid white !important;
+  border-right: 0px solid white !important;
+  border-left: 0px solid white !important;
+    }
+
+.head {
+  font-weight: normal;
+  font-size: 20px;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+<h2 >Registered Users</h2>
+
+
+<div class="container">
+                <div class="row"  style="margin-top: 50px;">
+                <div class="col-md-12 text-center">
+                          <div class="outer-form">
+                    <table class="table-striped table table-bordered vertical">
+                          
+                            <tr>
+                              <th  class="head">S.No.</th>
+                              <th  class="head">Username</th>
+                              <th  class="head">E-mail</th>
+                              <th  class="head">Password</th>
+                              <th  class="head">Status</th>
+                            </tr>
+                          
+
+                          <tbody style="border:1px solid transparent;  color: black ; text-align: left;">
+                            <tr id= "1">
+                              <td style="padding: 14px;">01</td>
+                              <td> Dr IQsdefrgrg</td>
+                              <td>ad@gmail.com</td>
+                              <td>12345</td>
+                              <td>
+                               <label class="switch">
+                               <input type="checkbox" checked>
+                               <span class="slider round"></span>
+                               </label>
+                              </td>
+                            </tr>
+                            
+
+                             <tr id= "2">
+                              <td style="padding: 14px;">02</td>
+                              <td>verma</td>
+                              <td>verma_kashyap@dooleyfahey.net</td>
+                              <td>2345</td>
+                              <td>
+                               <label class="switch">
+                               <input type="checkbox">
+                               <span class="slider round"></span>
+                               </label>
+                              </td>
+                            </tr>
+
+                            <tr id= "3">
+                              <td style="padding: 14px;">03</td>
+                              <td>Sonali</td>
+                              <td>admin@gmail.com</td>
+                              <td>7860</td> 
+                              <td>
+                               <label class="switch">
+                               <input type="checkbox">
+                               <span class="slider round"></span>
+                               </label>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding: 14px;">04</td>
+                              <td>Sonali2</td>
+                              <td>admin2@yopmail.com</td>
+                              <td>78600</td> 
+                              <td>
+                               <label class="switch">
+                               <input type="checkbox">
+                               <span class="slider round"></span>
+                               </label>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding: 14px;">05</td>
+                              <td>vermak</td>
+                              <td>verma_kashyap123@dooleyfahey.net</td>
+                              <td>45767887</td>
+                              <td>
+                               <label class="switch">
+                               <input type="checkbox">
+                               <span class="slider round"></span>
+                               </label>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding: 14px;">06</td>
+                              <td>Dr IQsdefrgrgyutr</td>
+                              <td>ad12@gmail.com</td>
+                              <td>1234567</td>
+                              <td>
+                               <label class="switch">
+                               <input type="checkbox">
+                               <span class="slider round"></span>
+                               </label>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="padding: 14px;">07</td>
+                              <td>suga</td>
+                              <td>suga@gmail.com</td>
+                              <td>567890</td>
+                              <td>
+                               <label class="switch">
+                               <input type="checkbox">
+                               <span class="slider round"></span>
+                               </label>
+                              </td>
+                            </tr>
+
+
+                          </tbody>
+                      
+                        </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+</body>
+</html>
+
